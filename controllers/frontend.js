@@ -2,6 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const router = express.Router();
 const { Frontend } = require('../models')
+const { FrontendComments } = require('../models')
 
 
 router.get("/", async (request, response) => {

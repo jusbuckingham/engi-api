@@ -34,7 +34,7 @@ const terminal = require('./controllers/terminal');
 // routes
 app.get('/', (req, res) => {
     res.json({
-        message: "Welcome to the MERN Auth API"
+        message: "Welcome to Engi!"
     });
 });
 
