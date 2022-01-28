@@ -2,13 +2,21 @@
 // Use Ctrl+Space inside a snippet or a string literal to trigger completions.
 
 const database = 'engi';
-// const collection = 'terminal-comments';
+// const collection = 'terminal';
 
 // Create a new database.
 use(database);
 
 // Create a new collection.
-db.createCollection(collection);
+// db.createCollection(collection);
+
+// Create
+// db.terminal.insertOne([
+//   {
+//     subject: 'Github',
+//     notes: '["git remote rm origin  #removes origin", "git branch  #lists all of the branches", ]'
+//   }
+// ]);
 
 // The prototype form to create a collection:
 /* db.createCollection( <name>,
