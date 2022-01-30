@@ -2,7 +2,6 @@ require('dotenv').config();
 const express = require('express');
 const router = express.Router();
 const { Terminal } = require('../models')
-const { TerminalComments } = require('../models')
 
 
 router.get("/", async (request, response) => {
@@ -15,7 +14,7 @@ router.get("/", async (request, response) => {
         response.json({ terminalArray });
     } catch (error) {
         response.status(500).send(error);
-    } 
+    }
 });
 
 router.post("/new", async (request, response) => {
@@ -26,7 +25,6 @@ router.post("/new", async (request, response) => {
 
         const newComment = await Terminal.insertMany({
             comments: request.body.comments,
-
         })
     }
     catch (error) {
