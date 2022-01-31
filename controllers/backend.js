@@ -23,8 +23,9 @@ router.post("/new", async (request, response) => {
         response.send('ok')
         console.log(request.body)
 
-        const newComment = await Backend.insertMany({
-            comments: request.body.comments,
+        const newNote = await Backend.insertMany({
+            subject: request.body.subject,
+            notes: request.body.notes
         })
     }
     catch (error) {
