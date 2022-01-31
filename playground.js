@@ -116,16 +116,16 @@ const { Database } = require("./models")
 
 
 
-Database.insertMany([
-    {
-        subject: 'Mongodb',
-        notes: ""
-    }
-])
-    .then((newTerminalNotes) => {
-        console.log(newTerminalNotes);
-    })
-    .catch((error) => {
-        console.log(error);
-    });
+// Database.insertMany([
+//     {
+//         subject: 'Mongodb',
+//         notes: "A source-available cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas. MongoDB is developed by MongoDB Inc. and licensed under the Server Side Public License (SSPL)."
+//     }
+// ])
+//     .then((newTerminalNotes) => {
+//         console.log(newTerminalNotes);
+//     })
+//     .catch((error) => {
+//         console.log(error);
+//     });
 
