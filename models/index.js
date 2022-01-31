@@ -40,11 +40,7 @@ const User = require('./user');
 module.exports = {
   User: require("./user"),
   Terminal: require("./terminal"),
-  TerminalComments: require("./terminalcomments"),
   Frontend: require("./frontend"),
-  FrontendComments: require("./frontendcomments"),
   Backend: require("./backend"),
-  BackendComments: require("./backendcomments"),
   Database: require("./database"),
-  DatabaseComments: require("./databasecomments"),
 };
