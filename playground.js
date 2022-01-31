@@ -116,16 +116,16 @@ const { Database } = require("./models")
 
 
 
-// Database.insertMany([
-//     {
-//         subject: 'Mongodb',
-//         notes: ""
-//     }
-// ])
-//     .then((newTerminalNotes) => {
-//         console.log(newTerminalNotes);
-//     })
-//     .catch((error) => {
-//         console.log(error);
-//     });
+Database.insertMany([
+    {
+        subject: 'Mongodb',
+        notes: ""
+    }
+])
+    .then((newTerminalNotes) => {
+        console.log(newTerminalNotes);
+    })
+    .catch((error) => {
+        console.log(error);
+    });
 
