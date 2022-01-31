@@ -34,4 +34,36 @@ router.post("/new", async (request, response) => {
     }
 });
 
+router.put("/edit", async (request, response) => {
+    try {
+
+        response.send('ok')
+        console.log(request.body)
+
+        const editNote = await Frontend.updateOne({
+            subject: request.body.subject,
+            notes: request.body.notes
+        })
+    }
+    catch (error) {
+        response.status(500).send(error);
+    }
+});
+
+router.delete("/delete", async (request, response) => {
+    try {
+
+        response.send('ok')
+        console.log(request.body)
+
+        const deleteNote = await Frontend.remove({
+            subject: request.body.subject,
+            notes: request.body.notes
+        })
+    }
+    catch (error) {
+        response.status(500).send(error);
+    }
+});
+
 module.exports = router;
