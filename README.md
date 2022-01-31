@@ -1,3 +1,5 @@
+![Engi-Logo](./img/engi-logo.jpeg)
+
 # Engi-api
 Your Engineer Buddy!
 
