@@ -17,45 +17,13 @@ router.get("/", async (request, response) => {
     }
 });
 
-router.post("/", async (request, response) => {
+router.post("/new", async (request, response) => {
     try {
 
         response.send('ok')
         console.log(request.body)
 
         const newNote = await Backend.insertMany({
-            subject: request.body.subject,
-            notes: request.body.notes
-        })
-    }
-    catch (error) {
-        response.status(500).send(error);
-    }
-});
-
-router.put("/edit", async (request, response) => {
-    try {
-
-        response.send('ok')
-        console.log(request.body)
-
-        const editNote = await Backend.updateOne({
-            subject: request.body.subject,
-            notes: request.body.notes
-        })
-    }
-    catch (error) {
-        response.status(500).send(error);
-    }
-});
-
-router.delete("/delete", async (request, response) => {
-    try {
-
-        response.send('ok')
-        console.log(request.body)
-
-        const deleteNote = await Backend.remove({
             subject: request.body.subject,
             notes: request.body.notes
         })
